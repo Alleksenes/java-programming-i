@@ -1,0 +1,45 @@
+
+import java.util.Scanner;
+
+public class AVClub {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            String input = scanner.nextLine();
+            if (input.equals("")) {
+                return;
+            }
+
+            String[] parts = input.split(" ");
+
+            for (String word : parts) {
+                if (word.contains("av")) {
+                    System.out.println(word);
+                }
+            }
+        }
+    }
+}
+
+/*
+ * String input = scanner.nextLine();
+ * 
+ * if (input.equals("")) {
+ * return;
+ * }
+ * 
+ * String[] fragments = input.split(" ");
+ * int index = 0;
+ * while (!(input.equals("")) && index < fragments.length) {
+ * for (int i = 0; i < fragments.length; i++) {
+ * if (fragments[i].contains("av")) {
+ * System.out.println(fragments[i]);
+ * }
+ * index++;
+ * }
+ * input = scanner.nextLine();
+ * fragments = input.split(" ");
+ * index = 0;
+ */
