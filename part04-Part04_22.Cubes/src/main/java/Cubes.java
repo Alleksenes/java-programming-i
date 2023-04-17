@@ -7,17 +7,15 @@ public class Cubes {
         Scanner scanner = new Scanner(System.in);
 
     while (true) {
-        System.out.println("Enter a number: ");
-        
         String input = scanner.nextLine();
-        int number = Integer.valueOf(input);
-        if (input == "end") {
+
+        if (input.equals("end")){
             break;
         }
-        System.out.println("The cube of " + number + " is " + (number * number * number));
+       
+        int number = Integer.valueOf(input);
 
-        
-        
+        System.out.println(number * number * number);
     }
 }
 }
